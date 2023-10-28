@@ -17,12 +17,18 @@ module.exports = {
           'css-loader'
         ]
       },
+      /*
+      url loader 需要file loader。
+      超过限制的图片还是需要 file loader处理
+      在package.json 当中
+      */
       {
         test: /.png$/,
         use: {
           loader: 'url-loader',
           options: {
-            limit: 10 * 1024 // 10 KB
+            // 小于 15 kb的图片才会转化成 base64格式 一般是 10kb
+            limit: 15 * 1024 // 15 KB
           }
         }
       }

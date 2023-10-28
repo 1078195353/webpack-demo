@@ -9,8 +9,8 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    hot: true
-    // hotOnly: true // 只使用 HMR，不会 fallback 到 live reloading
+    hot: true // 如果热替换失败，会刷新页面，导致错误信息丢失
+    // hotOnly: true // 只使用 HMR，不会 fallback 到 live reloading，可以报错错误信息
   },
   module: {
     rules: [

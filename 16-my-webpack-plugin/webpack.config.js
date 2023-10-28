@@ -13,8 +13,10 @@ class MyPlugin {
         // console.log(name)
         // console.log(compilation.assets[name].source())
         if (name.endsWith('.js')) {
+          // 使用source 方法获取资源内容
           const contents = compilation.assets[name].source()
           const withoutComments = contents.replace(/\/\*\*+\*\//g, '')
+          // 修改内容 也是需要修改 sourece 方法. 同时需要对 必须的 size 方法进行更新
           compilation.assets[name] = {
             source: () => withoutComments,
             size: () => withoutComments.length

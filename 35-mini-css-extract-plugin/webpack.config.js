@@ -13,6 +13,12 @@ module.exports = {
     filename: '[name].bundle.js'
   },
   optimization: {
+    /*
+    放在 minimizer 当中 可以只在 开启了 minimizer（生产模式默认开启）
+    其他情况 插件不会运行。
+    但是，minimizer 被定义，webpack认为压缩工具都在该数组当中取，原有的js压缩工具失效
+    需要重新添加回来
+    */
     minimizer: [
       new TerserWebpackPlugin(),
       new OptimizeCssAssetsWebpackPlugin()

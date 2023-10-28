@@ -2,7 +2,7 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-
+// 使用 webpack --watch 可以让wbpack 自动监听文件变化重新打包
 module.exports = {
   mode: 'none',
   entry: './src/main.js',

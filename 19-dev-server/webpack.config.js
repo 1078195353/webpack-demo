@@ -3,6 +3,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
+/*
+1. webpack-dev-server 并没有将打包结果放到磁盘当中，放在内存当中
+比watch mode要快
+2. 
+
+*/
 module.exports = {
   mode: 'none',
   entry: './src/main.js',
@@ -11,6 +17,7 @@ module.exports = {
     path: path.join(__dirname, 'dist')
   },
   devServer: {
+    // 额外的资源路径
     contentBase: './public',
     proxy: {
       '/api': {

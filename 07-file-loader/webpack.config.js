@@ -1,5 +1,8 @@
 const path = require('path')
-
+/*
+  文件资源加载器 （图片）
+  file-loader
+*/
 module.exports = {
   mode: 'none',
   entry: './src/main.js',

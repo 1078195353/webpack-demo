@@ -38,6 +38,7 @@ module.exports = {
       meta: {
         viewport: 'width=device-width'
       },
+      // 基础模板
       template: './src/index.html'
     }),
     // 用于生成 about.html

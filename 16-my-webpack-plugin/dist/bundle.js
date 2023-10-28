@@ -160,7 +160,7 @@ if (content.locals) {
 
 exports = module.exports = __webpack_require__(4)(false);
 // Module
-exports.push([module.i, ".heading {\n  padding: 20px;\n  background: #343a40;\n  color: #fff;\n}\n", ""]);
+exports.push([module.i, ".heading {\r\n  padding: 20px;\r\n  background: #343a40;\r\n  color: #fff;\r\n}\r\n", ""]);
 
 
  }),
@@ -575,7 +575,7 @@ if (content.locals) {
 
 exports = module.exports = __webpack_require__(4)(false);
 // Module
-exports.push([module.i, "body {\n  margin: 0 auto;\n  padding: 0 20px;\n  max-width: 800px;\n  background: #f4f8fb;\n}\n", ""]);
+exports.push([module.i, "body {\r\n  margin: 0 auto;\r\n  padding: 0 20px;\r\n  max-width: 800px;\r\n  background: #f4f8fb;\r\n}\r\n", ""]);
 
 
  }),

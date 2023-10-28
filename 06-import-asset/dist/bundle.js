@@ -91,7 +91,7 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _heading_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
 /* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_1__);
 
 
@@ -107,8 +107,10 @@ document.body.append(heading)
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _heading_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _heading_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_heading_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _heading_module_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _heading_module_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_heading_module_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _headingtest_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var _headingtest_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_headingtest_css__WEBPACK_IMPORTED_MODULE_1__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = (() => {
@@ -152,8 +154,11 @@ if (content.locals) {
 
 exports = module.exports = __webpack_require__(4)(false);
 // Module
-exports.push([module.i, ".heading {\n  padding: 20px;\n  background: #343a40;\n  color: #fff;\n}\n", ""]);
-
+exports.push([module.i, ".src-heading-module__heading--1G8RH {\r\n  padding: 20px;\r\n  background: #343a40;\r\n  color: #fff;\r\n}\r\n", ""]);
+// Exports
+exports.locals = {
+	"heading": "src-heading-module__heading--1G8RH"
+};
 
 /***/ }),
 /* 4 */
@@ -567,7 +572,41 @@ if (content.locals) {
 
 exports = module.exports = __webpack_require__(4)(false);
 // Module
-exports.push([module.i, "body {\n  margin: 0 auto;\n  padding: 0 20px;\n  max-width: 800px;\n  background: #f4f8fb;\n}\n", ""]);
+exports.push([module.i, ".src-headingtest__heading--19uoc {\r\n  padding: 20px;\r\n  background: #bfa;\r\n  color: #fff;\r\n}\r\n", ""]);
+// Exports
+exports.locals = {
+	"heading": "src-headingtest__heading--19uoc"
+};
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(9);
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = "head";
+options.singleton = false;
+
+var update = __webpack_require__(5)(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(false);
+// Module
+exports.push([module.i, "body {\r\n  margin: 0 auto;\r\n  padding: 0 20px;\r\n  max-width: 800px;\r\n  background: #f4f8fb;\r\n}\r\n", ""]);
 
 
 /***/ })

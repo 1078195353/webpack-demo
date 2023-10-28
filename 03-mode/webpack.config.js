@@ -5,7 +5,7 @@ module.exports = {
   // 1. 生产模式下，Webpack 会自动优化打包结果；
   // 2. 开发模式下，Webpack 会自动优化打包速度，添加一些调试过程中的辅助；
   // 3. None 模式下，Webpack 就是运行最原始的打包，不做任何额外处理；
-  mode: 'development',
+  mode: 'production',
   entry: './src/main.js',
   output: {
     filename: 'bundle.js',

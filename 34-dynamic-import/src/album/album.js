@@ -24,6 +24,6 @@ export default () => {
       album.appendChild(section)
     })
   })
-
+  console.log('as');
   return album
 }
